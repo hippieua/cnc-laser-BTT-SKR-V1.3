@@ -55,11 +55,11 @@
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400 }
 #define DEFAULT_MAX_FEEDRATE          { 900, 900, 5 }
 
-#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100 }
+#define DEFAULT_MAX_ACCELERATION      { 1500, 1500, 100 }
 
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  1500    // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration for travel (non printing) moves
 
 
 #define DEFAULT_EJERK    5.0  // May be used by Linear Advance

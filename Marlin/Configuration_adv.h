@@ -144,7 +144,7 @@
   #define INTERPOLATE      true
 
   #if AXIS_IS_TMC_CONFIG(X)
-    #define X_CURRENT       800        // (mA) RMS current. Multiply by 1.414 for peak current.
+    #define X_CURRENT       1200        // (mA) RMS current. Multiply by 1.414 for peak current.
     #define X_CURRENT_HOME  800  // (mA) RMS current for homing. (Typically lower than *_CURRENT.)
     #define X_MICROSTEPS    16        // 0..256
     #define X_RSENSE        0.11     // Multiplied x1000 for TMC26X
@@ -152,7 +152,7 @@
   #endif
 
   #if AXIS_IS_TMC_CONFIG(Y)
-    #define Y_CURRENT       800
+    #define Y_CURRENT       1200
     #define Y_CURRENT_HOME  800
     #define Y_MICROSTEPS    16
     #define Y_RSENSE        0.11
@@ -178,8 +178,8 @@
   #define SENSORLESS_HOMING // StallGuard capable drivers only
 
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
-    #define X_STALL_SENSITIVITY  25
-    #define Y_STALL_SENSITIVITY  25
+    #define X_STALL_SENSITIVITY  35
+    #define Y_STALL_SENSITIVITY  35
     #define IMPROVE_HOMING_RELIABILITY
   #endif
 
